@@ -254,6 +254,29 @@ nav a:hover{
     justify-content: center;
     padding-bottom: 12vh;
 }
+.cardover{
+    position: relative;
+}
+.cardover .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(to right, #838fffa4, #65bbfda4);
+    color: white;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+.cardover:hover .overlay{
+    opacity: 1;
+}
 .artprojects h4{
     font-size: 1.125rem;
     color: #222222;
@@ -309,7 +332,102 @@ nav a:hover{
     gap: 3vw;
     margin-top: 7vh;
     justify-content: center;
+    background-color: #F9F9FF;
 }
+.ncontainer{
+    background-color: #e2e5ff;
+    width: 10vw;
+    height: 10vw;
+   padding: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 3vw;
+}
+.number{
+    font-size: 2.125rem;
+    font-weight: 700;
+    color: black;
+    background-color: #edefff;
+    padding: 0.6vw 1.1vw;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.choosecards{
+    padding: 5vh 1vw;
+    width: 25vw;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+.choosecards h5{
+    font-size: 1.125rem;
+    color: #222222;
+    padding-top: 3vh;
+}
+.for{
+    padding-bottom: 3vh;
+}
+.choosecards p{
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 5vh;
+}
+.choosecards li{
+    font-size: 0.86rem;
+    line-height: 5vh;
+    color: #777777;
+    border-bottom: 0.5px solid #d3d3d3;
+}
+.choosecards button{
+    display: none;
+}
+.choosecards:hover p{
+    display: none;
+}
+.choosecards:hover button{
+    display: block;
+    background-color: white;
+    color: Black;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    padding: 2vh 11vh;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+.choosecards:hover{
+    background: linear-gradient(to right, #8390ff, #65bafd);
+    transform: scale(1.1);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.choosecards:hover li{
+    color: white;
+    border-bottom: 1px solid white;
+    transition: 0.3s ease-in-out;
+    
+}
+.choosecards:hover h5{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.choosecards:hover .ncontainer{
+    background-color: #97c5fe;
+    transition: 0.3s ease-in-out;
+}
+.choosecards:hover .number{
+    background: linear-gradient(to right, #8390ff, #65bafd);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
 .secposts{
     background-color: #F9F9FF;
     text-align: center;
@@ -317,9 +435,28 @@ nav a:hover{
 }
 .artposts{
     display: flex;
-    gap: 3vw;
+    gap: 2vw;
     margin-top: 7vh;
     text-align: left;
+    padding: 0 9vw;
+}
+.artposts h5{
+    padding: 2vh 0;
+}
+.artposts a{
+    font-size: 1.1rem;
+    color: #222222;
+    transition: 0.3s ease-in-out;
+}
+.artposts div:hover a{
+    color: #8390ff;
+}
+.artposts:hover{
+    cursor: pointer;
+}
+.artposts div:hover img{
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
 }
 .logos{
     background: linear-gradient(to right, #8390ff, #65bafd);
@@ -328,13 +465,70 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     padding: 10vh 0;
-    
+}
+.logos img{
+    opacity: 0.6;
+}
+.logos img:hover{
+    opacity: 1;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
 }
 footer{
     background-color: #04091E;
     color: white;
-    padding: 5vh 0;
+    padding: 8vw;
     font-size: 0.75rem;
     display: flex;
     gap: 3vw;
+}
+.footerdivs h5{
+    font-size: 1.125rem;
+    padding-bottom: 4vh;
+}
+footer h5:hover{
+    color: #8390ff;
+}
+.footerdivs p{
+    color: #777777;
+    font-size: 0.875rem;
+    padding-bottom: 3vh;
+}
+.footerdivs p:hover{
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.lilac{
+    color: #8390ff;
+}
+footer ul{
+    display: flex;
+    gap: 1vw;
+    font-size: 1rem;
+}
+footer li:hover{
+    color: #8390ff;
+}
+
+footer input{
+    width: 25vw;
+    padding: 1.7vh;
+    font-family: poppins;
+    position: relative;
+    top: -2vh;
+   
+}
+footer button{
+    background-color: #8390ff;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.6vh;
+    width: 4vw;
+    position: relative;
+    top: -1vh;
+    right: 0.5vw;
+}
+footer button:hover{
+    background-color: blue;
 }
