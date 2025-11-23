@@ -790,16 +790,22 @@ footer button:hover{
    .menu-toggle{
       margin-left: 12vw;  
     }
+<<<<<<< HEAD
     .secme p{
         width: 80vw;
     }
     .aboutpmobile{
         width: 80vw;
+=======
+    .aboutpmobile{
+        width: 90vw;
+>>>>>>> bb0aca9 (new commit)
     }
     .pserve2{
         font-size: 0.8rem;
     }
     .servecards{
+<<<<<<< HEAD
         width: 85vw;
 }
 .pmhide{
@@ -828,4 +834,13 @@ footer button:hover{
 
 
 
+=======
+        width: 90vw;
+}
+.cardrev p{
+        width: 60vw;
+}
+
+
+>>>>>>> bb0aca9 (new commit)
 }
