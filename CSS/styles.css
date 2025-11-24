@@ -5,12 +5,14 @@
 }
 body{
     font-family: 'Poppins';
+     overflow-x: hidden;
 }
-/* header{
+header{
     width: 100vw;
     position: fixed;
     top: 0;
-} */
+    z-index: 20;
+}
 .header1{
     display: flex;
     background-color: #333333;
@@ -62,6 +64,7 @@ a{
 }
 nav{
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 nav ul{
     display: flex;
@@ -86,10 +89,16 @@ nav a:hover{
     padding-left: 7vw;
     padding-right: 28vw;
 }
+.nav2{
+    display: none;
+}
+.options{
+    display: none;
+}
 .secme{
     background-color: #F9F9FF;
     padding-left: 9vw;
-    padding-top: 10vh;
+    padding-top: 38vh;
     display: flex;
     gap: 5vw;
     align-items: center;
@@ -152,6 +161,12 @@ nav a:hover{
     margin-bottom: 5vh;
     line-height: 3.5vh;
 }
+.aboutp2{
+    display: none;
+}
+.aboutpmobile{
+    display: none;
+}
 .secservices{
     background-color: #F6F6F6;
     text-align: center;
@@ -170,6 +185,9 @@ nav a:hover{
     color: #777777;
     font-weight: 200;
     line-height: 1.5rem;
+}
+.pserve2{
+    display: none;
 }
 .secservices article{
     display: flex;
@@ -310,6 +328,9 @@ nav a:hover{
     width: 40px;
     height: 40px;
 }
+.prev{
+    display: none;
+}
 .cardrev p{
     font-size: 0.85rem;
     color: #777777;
@@ -329,10 +350,9 @@ nav a:hover{
 }
 .artchoose{
     display: flex;
-    gap: 3vw;
     margin-top: 7vh;
     justify-content: center;
-    background-color: #F9F9FF;
+    
 }
 .ncontainer{
     background-color: #e2e5ff;
@@ -359,7 +379,8 @@ nav a:hover{
 }
 .choosecards{
     padding: 5vh 1vw;
-    width: 25vw;
+    width: 28vw;
+    background-color: #F9F9FF;
     border-radius: 5px;
     text-align: center;
     transition: 0.3s ease-in-out;
@@ -462,9 +483,11 @@ nav a:hover{
     background: linear-gradient(to right, #8390ff, #65bafd);
     display: flex;
     gap: 6vw;
+     width: calc(250px * 11);
     justify-content: center;
     align-items: center;
     padding: 10vh 0;
+    animation: scroll 30s linear infinite;
 }
 .logos img{
     opacity: 0.6;
@@ -474,6 +497,15 @@ nav a:hover{
     transition: 0.1s ease-in-out;
     cursor: pointer;
 }
+@keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
 footer{
     background-color: #04091E;
     color: white;
@@ -531,4 +563,269 @@ footer button{
 }
 footer button:hover{
     background-color: blue;
+}
+
+@media(max-width: 780px){
+    html{
+        font-size: 14px;
+    }
+    #personal{
+        margin-right: 28vw;
+    }
+    nav{
+        display: none;
+    }
+    .nav2{
+        display: block;
+    }
+    .menu-toggle{
+        font-size: 2rem;
+        margin-left: 40vw;
+        cursor: pointer;
+    }
+    .options{
+        display: none;
+        flex-direction: column;
+        margin-left: -70vw;
+    }
+    .options li{
+         padding: 1vh 0;
+    }
+    .options.active{
+        display: flex;
+    }
+    .secme img{
+        width: 45vw;
+        margin-right: 5vw;
+        
+    }
+    .secabout{
+        padding-bottom: 10vh;
+    }
+    .aboutp{
+        display: none;
+    }
+    .aboutp2{
+        display: block;
+        padding-right: 5vw;
+    }
+    .secproducts{
+        flex-wrap: wrap;
+        gap: 30vw;
+        padding: 5vh;
+    }
+    .secproducts h4{
+        font-size: 3rem;
+    }
+    .secproducts p{
+        font-size: 1rem;
+    }
+    .artprojects{
+        padding: 0;
+    }
+    .projectcards img{
+        width: 25vw;
+    
+    }
+    .artchoose{
+        padding-bottom: 10vh;
+        flex-wrap: wrap;
+    }
+    .choosecards{
+        width: 30vw;
+    }
+    .ncontainer{
+        margin-left: 8vw;
+    }
+    .servecards{
+        width: 40vw;
+    }
+    .artposts img{
+        width: 28vw;
+    }
+    .artposts p{
+        font-size: 1.1rem;
+    }
+    .hidelogo{
+        display: none;
+    }
+    .logos{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .logos img{
+        width: 12vw;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    footer button{
+        padding: 0.9vh;
+        width: 5vw;
+    }
+    .news{
+        width: 40vw;
+    }
+}
+@media(max-width:450px){
+    .header1{
+        display: none;
+    }
+    .menu-toggle{
+      margin-left: 20vw;  
+    }
+    .secme{
+        flex-direction: column;
+    }
+    .me1 h1{
+        font-size: 2rem;
+    }
+    .secme img{
+        margin-top: -10vh;
+        width: 70vw;
+    }
+    .secabout{
+        flex-direction: column;
+        padding-left: 2vw;
+    }
+    .secabout img{
+        width: 90vw;
+        margin: 0;
+    }
+    .secabout h2{
+        font-size: 1.5rem;
+    }
+    .aboutp2{
+        display: none;
+    }
+    .aboutpmobile{
+        display: block;
+    }
+    .pserve{
+        display: none;
+    }
+    .pserve2{
+        display: block;
+        padding: 0 5vw;
+        line-height: 1.5rem;
+        color: #777777;
+    }
+    .secservices article{
+        flex-direction: column;
+    }
+    .servecards{
+        width: 70vw;
+    }
+    .secproducts{
+        flex-direction: column;
+       gap: 10vh;
+       padding: 10vh 5vw;
+    }
+    .secprojects a{
+        font-size: 0.8rem;
+    }
+    .artprojects{
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .projectcards img{
+        width: 85vw;
+    }
+    .secreviews h2{
+        padding: 0 15vw;
+    }
+    .secreviews .p1{
+        padding: 0 5vw;
+        margin-top: 3vh;
+    }
+    .artrev{
+        flex-direction: column;
+    }
+    .cardrev p{
+        width: 68vw;
+    }
+    .artchoose{
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .choosecards{
+        width: 85vw;
+    }
+    .ncontainer{
+        margin-left: 32vw;
+        padding: 10vw;
+    }
+    .number{
+        padding: 1.5vw;
+    }
+    .secposts h2{
+        padding: 3vh;
+    }
+    .secposts .p1{
+        font-size: 1rem;
+    }
+    .artposts{
+        flex-direction: column;
+        padding: 0 3vw;
+    }
+    .artposts img{
+        width: 93vw;
+    }
+    footer{
+        flex-direction: column;
+        padding-bottom: 15vh;
+    }
+    footer input{
+        width: 40vw;
+    }
+    footer button{
+       padding: 1.3vw;
+       width: 10vw;
+       left: -1vh;
+    }
+
+}
+
+@media(max-width:370px){
+   .menu-toggle{
+      margin-left: 12vw;  
+    }
+    .secme p{
+        width: 80vw;
+    }
+    .aboutpmobile{
+        width: 80vw;
+    }
+    .pserve2{
+        font-size: 0.8rem;
+    }
+    .servecards{
+        width: 85vw;
+}
+.pmhide{
+    display: none;
+}
+.prev{
+    display: block;
+        width: 40vw;
+}
+.secposts .p1{
+    font-size: 0.8rem;
+    padding: 3vw;
+}
+.artposts img{
+    width: 90vw;
+}
+.artposts .p1{
+    width: 80vw;
+}
+.secreviews h2{
+    font-size: 1.2rem;
+}
+.cardrev p{
+    width: 85vw;
+}
+
+
+
 }
