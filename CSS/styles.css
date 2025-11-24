@@ -799,42 +799,11 @@ footer button:hover{
 =======
     .aboutpmobile{
         width: 90vw;
->>>>>>> bb0aca9 (new commit)
     }
     .pserve2{
         font-size: 0.8rem;
     }
     .servecards{
-<<<<<<< HEAD
-        width: 85vw;
-}
-.pmhide{
-    display: none;
-}
-.prev{
-    display: block;
-        width: 40vw;
-}
-.secposts .p1{
-    font-size: 0.8rem;
-    padding: 3vw;
-}
-.artposts img{
-    width: 90vw;
-}
-.artposts .p1{
-    width: 80vw;
-}
-.secreviews h2{
-    font-size: 1.2rem;
-}
-.cardrev p{
-    width: 85vw;
-}
-
-
-
-=======
         width: 90vw;
 }
 .cardrev p{
@@ -842,5 +811,4 @@ footer button:hover{
 }
 
 
->>>>>>> bb0aca9 (new commit)
 }
