@@ -790,25 +790,42 @@ footer button:hover{
    .menu-toggle{
       margin-left: 12vw;  
     }
-<<<<<<< HEAD
     .secme p{
         width: 80vw;
     }
     .aboutpmobile{
         width: 80vw;
-=======
-    .aboutpmobile{
-        width: 90vw;
     }
     .pserve2{
         font-size: 0.8rem;
     }
     .servecards{
-        width: 90vw;
+        width: 85vw;
+}
+.pmhide{
+    display: none;
+}
+.prev{
+    display: block;
+        width: 40vw;
+}
+.secposts .p1{
+    font-size: 0.8rem;
+    padding: 3vw;
+}
+.artposts img{
+    width: 90vw;
+}
+.artposts .p1{
+    width: 80vw;
+}
+.secreviews h2{
+    font-size: 1.2rem;
 }
 .cardrev p{
-        width: 60vw;
+    width: 85vw;
 }
+
 
 
 }
